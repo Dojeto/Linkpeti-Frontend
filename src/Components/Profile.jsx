@@ -20,7 +20,7 @@ const Profile = () => {
   const onBioUpdate = async () => {
     try {
       const response = await fetch(
-        `https://linkship.onrender.com/manage/addbio`,
+        `https://linkship-backend.cyclic.app/manage/addbio`,
         {
           method: "POST",
           credentials: "include",
@@ -42,7 +42,7 @@ const Profile = () => {
   const onImageUpload = async (url) => {
     try {
       const response = await fetch(
-        `https://linkship.onrender.com/manage/addimage`,
+        `https://linkship-backend.cyclic.app/manage/addimage`,
         {
           method: "POST",
           credentials: "include",
@@ -62,7 +62,7 @@ const Profile = () => {
     }
   };
   const getuser = async () => {
-    const response = await fetch(`https://linkship.onrender.com/dashboard`, {
+    const response = await fetch(`https://linkship-backend.cyclic.app/dashboard`, {
       method: "GET",
       headers: { token: localStorage.getItem("token") },
     });
@@ -72,7 +72,7 @@ const Profile = () => {
 
   const getUserDetails = async () => {
     const response = await fetch(
-      `https://linkship.onrender.com/manage/getall/${userName}`,
+      `https://linkship-backend.cyclic.app/manage/getall/${userName}`,
       {
         method: "GET",
         credentials: "include",

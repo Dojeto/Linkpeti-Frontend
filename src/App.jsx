@@ -9,7 +9,7 @@ import Profile from "./Components/Profile";
 const App = () => {
   const [userVerified,setUserverified] = useState(false);
   const checkUser = async () =>{
-     const response = await fetch('https://linkship.onrender.com/auth/is-verify',{
+     const response = await fetch('https://linkship-backend.cyclic.app/auth/is-verify',{
       method:"GET",
       headers:{token:localStorage.token}
      })

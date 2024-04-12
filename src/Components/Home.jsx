@@ -14,7 +14,7 @@ const Home = (props) => {
 
   const onRegisterSubmit = async () => {
     const response = await fetch(
-      `https://linkship.onrender.com/auth/register`,
+      `https://linkship-backend.cyclic.app/auth/register`,
       {
         method: "POST",
         credentials: "include",
@@ -39,7 +39,7 @@ const Home = (props) => {
 
   const onLoginSubmit = async () => {
     const response = await fetch(
-      `https://linkship.onrender.com/auth/login`,
+      `https://linkship-backend.cyclic.app/auth/login`,
       {
         method: "POST",
         credentials: "include",
