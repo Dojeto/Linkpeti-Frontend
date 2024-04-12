@@ -20,7 +20,7 @@ const Profile = () => {
   const onBioUpdate = async () => {
     try {
       const response = await fetch(
-        `https://linkship.herokuapp.com/manage/addbio`,
+        `https://linkship.onrender.com/manage/addbio`,
         {
           method: "POST",
           credentials: "include",
@@ -42,7 +42,7 @@ const Profile = () => {
   const onImageUpload = async (url) => {
     try {
       const response = await fetch(
-        `https://linkship.herokuapp.com/manage/addimage`,
+        `https://linkship.onrender.com/manage/addimage`,
         {
           method: "POST",
           credentials: "include",
@@ -62,7 +62,7 @@ const Profile = () => {
     }
   };
   const getuser = async () => {
-    const response = await fetch(`https://linkship.herokuapp.com/dashboard`, {
+    const response = await fetch(`https://linkship.onrender.com/dashboard`, {
       method: "GET",
       headers: { token: localStorage.getItem("token") },
     });
@@ -72,7 +72,7 @@ const Profile = () => {
 
   const getUserDetails = async () => {
     const response = await fetch(
-      `https://linkship.herokuapp.com/manage/getall/${userName}`,
+      `https://linkship.onrender.com/manage/getall/${userName}`,
       {
         method: "GET",
         credentials: "include",
@@ -180,7 +180,7 @@ const Profile = () => {
 
         {isPicker && (
           <PickerOverlay
-            apikey={"AJbGbxcJRbqofHCOKiyGJz"}
+            apikey={"Ayya9lP0US0q6VkHTaDlUz"}
             action="pick"
             pickerOptions={{
               maxSize: 10 * 1024 * 1024,

@@ -10,7 +10,7 @@ const Links = () => {
   const [userfound, setuserFound] = useState(false);
   const getUserDetails = async () => {
     const response = await fetch(
-      `https://linkship.herokuapp.com/manage/getall/${username}`,
+      `https://linkship.onrender.com/manage/getall/${username}`,
       {
         method: "GET",
         credentials: "include",

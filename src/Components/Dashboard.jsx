@@ -18,7 +18,7 @@ const Dashboard = () => {
   const [applink, setApplink] = useState("");
 
   const OnRemoveClick = async (id) =>{
-    const response = await fetch(`https://linkship.herokuapp.com/manage/removelink`,{
+    const response = await fetch(`https://linkship.onrender.com/manage/removelink`,{
           method:'POST',
           credentials: "include",
           headers: {
@@ -44,7 +44,7 @@ const Dashboard = () => {
       return toast.error("Invalid Url")
     }
     const response = await fetch(
-      `https://linkship.herokuapp.com/manage/addlink`,
+      `https://linkship.onrender.com/manage/addlink`,
       {
         method: "POST",
         credentials: "include",
@@ -64,7 +64,7 @@ const Dashboard = () => {
   };
   const getuser = async () => {
     const response = await fetch(
-      `https://linkship.herokuapp.com/dashboard`,
+      `https://linkship.onrender.com/dashboard`,
       {
         method: "GET",
         headers: { token: localStorage.getItem("token") },
@@ -76,7 +76,7 @@ const Dashboard = () => {
 
   const getUserDetails = async () => {
     const response = await fetch(
-      `https://linkship.herokuapp.com/manage/getall/${userName}`,
+      `https://linkship.onrender.com/manage/getall/${userName}`,
       {
         method: "GET",
         credentials: "include",
